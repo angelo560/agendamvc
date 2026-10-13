@@ -6,7 +6,7 @@ class AgendaController:
         self.agenda = Agenda()
 
     def adicionar(self):
-        print("\n--------- ADICIONAR CONTATO ---------")
+        print("\n- ADICIONAR CONTATO -")
 
         nome = input("Nome: ")
         telefone = input("Telefone: ")
@@ -20,7 +20,7 @@ class AgendaController:
         print("\nContato adicionado com sucesso!")
 
     def listar(self):
-        print("\n--------- LISTA DE CONTATOS ---------")
+        print("\n- LISTA DE CONTATOS -")
 
         contatos = self.agenda.listar_contatos()
 
@@ -35,7 +35,7 @@ class AgendaController:
                 print("Grupo:", contato.grupo)
 
     def buscar(self):
-        print("\n--------- BUSCAR CONTATO ---------")
+        print("\n- BUSCAR CONTATO -")
 
         nome = input("Digite o nome: ")
 
@@ -51,7 +51,7 @@ class AgendaController:
             print("Contato não encontrado.")
 
     def remover(self):
-        print("\n--------- REMOVER CONTATO ---------")
+        print("\n- REMOVER CONTATO -")
 
         nome = input("Digite o nome do contato: ")
 
@@ -83,7 +83,7 @@ class AgendaController:
         opcao = ""
 
         while opcao != "6":
-            print("\n--------- AGENDA ---------")
+            print("\n- AGENDA -")
             print("1 - Adicionar contato")
             print("2 - Listar contatos")
             print("3 - Buscar contato")
