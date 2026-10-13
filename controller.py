@@ -107,9 +107,3 @@ class AgendaController:
 
             elif opcao == "5":
                 self.listar_grupo()
-
-            elif opcao == "6":
-                print("\nPrograma encerrado.")
-
-            else:
-                print("\nOpção inválida.")
